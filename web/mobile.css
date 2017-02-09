@@ -84,6 +84,20 @@ body {
     text-decoration: none;
 }
 
+#imgCard {
+    border-radius: 1px;
+    font-style: italic;
+    width: 22%;
+}
+
+#imgCard p {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
 #aboutPic {
     border-radius: 5px;
+    float:top;
+    background-color: lightgray;
 }
