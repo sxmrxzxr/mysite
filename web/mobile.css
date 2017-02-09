@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 9, 2017, 3:24:04 PM
+    Author     : telec
+*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Courier, 'Courier New', san-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+}
+
+.virtualPage {
+    min-height: 500px; /* For Older Browsers */
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 128px;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+}
+
+#titleNav {
+    height: 128px;
+    min-width: 300px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#myTitle {
+    color: black;
+    margin-bottom: -3px;
+}
+
+#myTitle a {
+    text-decoration: none;
+    color: black;
+}
+
+#myTitle a:hover {
+    color: grey;
+}
+
+#myTitle a:visited {
+    text-decoration: none;
+}
+
+.nav {
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+.nav li {
+    display: inline;
+    margin-left: 5px;
+}
+
+.nav a {
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+.nav a:visited {
+    text-decoration: none;
+}
+
+#aboutPic {
+    border-radius: 5px;
+}

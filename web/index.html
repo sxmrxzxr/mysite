@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sam Rizer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="mobile.css" rel="stylesheet" type="text/css" />
+        <link href="desktop.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="titleNav">
+                <div id="myTitle">
+                    <h1><a href="#home">Sam Rizer</a></h1>
+                </div>
+                <ul class="nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>  
+            </div>
+
+            <div id="home" class="virtualPage">
+                <h3>Welcome!</h3>
+            </div>
+            
+            <div id="about" class="virtualPage"> 
+                <h3>About Me</h3>
+                <img id="aboutPic" src="img/UUHPXRbe.jpg" alt="Me Swimming"/>
+            </div>
+            
+            <div id="projects" class="virtualPage">
+                <h3>Projects</h3>
+            </div>
+            
+            <div id="contact" class="virtualPage">
+                <form name="frmContact" method="post" action="http://www.temple.edu/cgi-bin/mail?tue95606@temple.edu">
+                    <h3>Contact Me!</h3>
+                    Name: <input type="text" name="theirName" placeholder="Plain Text"/> <br/><br/>
+                    Email: <input type="email" name="theirEmail" placeholder="Valid Email"/> <br/><br/>
+                    Message: <textarea name="theirMsg" cols="45" rows="5">Write your message here</textarea><br/><br/>
+                    <input type="submit" value="Send!"/>
+                </form>
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('a[href^="#"]').click(function() {
+                    var target=$(this.hash);
+                    
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 900);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
