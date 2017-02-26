@@ -16,4 +16,9 @@ and open the template in the editor.
     #imgCard {
         width: 22%;
     }
+    
+    .info {
+        float: right;
+        width: 72%;
+    }
 }

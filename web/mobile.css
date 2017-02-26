@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Courier, 'Courier New', san-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .container {
@@ -100,4 +100,12 @@ body {
     border-radius: 5px;
     float:top;
     background-color: lightgray;
+}
+
+.info {
+    float: bottom;
+}
+
+#landingCard {
+    font-style: italic;
 }
